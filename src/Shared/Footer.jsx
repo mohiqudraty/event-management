@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="bg-neutral">
-      <footer className="container mx-auto">
+    <section data-aos="zoom-out-up" className="bg-neutral  ">
+      <footer className="container mx-auto ">
         <div className="footer p-10  text-neutral-content">
           <nav>
             <header className="footer-title">Services</header>

@@ -1,6 +1,11 @@
 const Partner = () => {
   return (
-    <div className="2xl:px-20 md:px-10 2xl:mx-auto 2xl:container">
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      className="2xl:px-20 md:px-10 2xl:mx-auto 2xl:container"
+    >
       <div className="md:py-12 py-8 px-4">
         <div className="flex flex-col items-center justify-center">
           <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">

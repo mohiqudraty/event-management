@@ -19,11 +19,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="3000">
       <Hero></Hero>
       {/* service section  */}
       <div className="container mx-auto my-10 py-10">
-        <h2 className=" text-4xl w-60 mx-auto font-black text-center my-5 py-5 border-y-4 border-dotted border-blue-500">
+        <h2
+          data-aos="fade-up"
+          className=" text-4xl w-60 mx-auto font-black text-center my-5 py-5 border-y-4 border-dotted border-blue-500"
+        >
           Our Services
         </h2>
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-5">
@@ -34,7 +37,7 @@ const Home = () => {
         </div>
       </div>
       {/* testimonial  */}
-      <div>
+      <div data-aos="zoom-in">
         <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">
           What our client says
         </h1>
@@ -50,6 +53,7 @@ const Home = () => {
       <Partner></Partner>
 
       {/* about section  */}
+
       <About></About>
     </div>
   );

@@ -23,9 +23,14 @@ const Login = () => {
     setError("");
 
     signIn(email, password)
-      .then((result) => console.log(result.user))
+      .then(
+        (result) => console.log(result.user),
+        toast.success("Login Success"),
+        navigate(location.state ? location.state : "/")
+      )
       .catch((error) => {
-        setError(error.code);
+        console.log(error);
+        setError("Please Provide Valid Email and Password");
       });
   };
 
@@ -34,13 +39,11 @@ const Login = () => {
     googleSignIn()
       .then(
         (result) => console.log(result.user),
-        navigate(location?.state ? location.state : "/"),
+        navigate("/"),
         toast("Login Success")
       )
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        console.log(error.message), setError(error);
       });
   };
 

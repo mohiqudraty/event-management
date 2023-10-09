@@ -5,7 +5,12 @@ const ServiceCards = ({ service }) => {
   // console.log(service);
   const { id, img, title, description, details, price } = service;
   return (
-    <div className="card bg-base-100 shadow-xl border-4">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="card bg-base-100 shadow-xl border-4"
+    >
       <figure>
         <img
           className="h-[256px] w-full object-cover rounded-t-xl "

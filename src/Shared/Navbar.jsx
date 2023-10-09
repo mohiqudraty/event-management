@@ -46,7 +46,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="">
+    <div data-aos="fade-down">
       <div className="navbar container mx-auto border-y-2 my-1">
         <div className="navbar-start">
           <div className="dropdown">

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div
+      data-aos="zoom-in-down"
       className="hero min-h-screen"
       style={{
         backgroundImage: "url(https://i.ibb.co/fSgMPDZ/event.jpg)",

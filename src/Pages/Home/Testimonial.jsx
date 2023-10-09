@@ -7,7 +7,11 @@ const Testimonial = ({ review }) => {
   return (
     <>
       <div>
-        <div className="group w-full bg-white relative flex flex-col items-center hover:bg-blue-700 cursor-pointer shadow-md md:p-12 p-6 border-8">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+          className="group w-full bg-white relative flex flex-col items-center hover:bg-blue-700 cursor-pointer shadow-md md:p-12 p-6 border-8"
+        >
           <div className="text-gray-600 h-60 group-hover:text-white flex flex-col items-center">
             <svg
               width={26}

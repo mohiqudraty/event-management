@@ -12,6 +12,10 @@ import TermsAndConditions from "../Pages/Dynamic/TermsAndCondition";
 import PrivacyPolicy from "../Pages/Dynamic/PrivacyPolicy";
 import Consultation from "../Pages/Consultation/Consultation";
 import Profile from "../Pages/Profile/Profile";
+// import AOS from "aos";
+// import "aos/dist/aos.css"; // You can also use <link> for styles
+// // ..
+// AOS.init();
 
 const router = createBrowserRouter([
   {
