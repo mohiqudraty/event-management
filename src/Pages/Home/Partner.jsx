@@ -1,9 +1,7 @@
 const Partner = () => {
   return (
     <div
-      data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
+      data-aos="zoom-out-down"
       className="2xl:px-20 md:px-10 2xl:mx-auto 2xl:container"
     >
       <div className="md:py-12 py-8 px-4">
@@ -11,7 +9,7 @@ const Partner = () => {
           <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">
             Our Trusted Partners
           </h1>
-          <p className="text-base leading-normal text-center text-gray-600 mt-4 xl:w-1/2 w-10/12">
+          <p className="text-base leading-normal text-center text-gray-600 mt-4 w-10/12">
             At [Social Event Management], we take pride in the strong and
             enduring partnerships we have forged with exceptional professionals
             and organizations in the event industry. Our trusted partners play a
@@ -21,7 +19,7 @@ const Partner = () => {
         </div>
         <div className="flex items-center justify-center mt-10">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-6 w-full">
-            <div className="md:w-48 w-full h-32 bg-gray-50 flex items-center justify-center">
+            <div className="md:w-48 w-full h-32 bg-gray-50 flex  flex-wrap  items-center justify-center">
               <svg
                 width={73}
                 height={24}

@@ -4,9 +4,10 @@ const Hero = () => {
   return (
     <div
       data-aos="zoom-in-down"
-      className="hero min-h-screen"
+      className="hero min-h-screen container mx-auto"
       style={{
         backgroundImage: "url(https://i.ibb.co/fSgMPDZ/event.jpg)",
+        backgroundSize: "cover",
       }}
     >
       <div className="hero-overlay bg-opacity-80"></div>
