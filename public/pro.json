@@ -1,0 +1,44 @@
+[
+  {
+    "subscription_id": 1,
+    "name": "Premium Event Planner",
+
+    "price_per_month": 199.99,
+
+    "features": [
+      "Personalized event consultations",
+      "Priority booking for event dates",
+      "Access to exclusive venues and suppliers",
+      "Dedicated event coordinator",
+      "Customized event planning timelines",
+      "Budget management and optimization"
+    ]
+  },
+  {
+    "subscription_id": 2,
+    "name": "Standard Event Planner",
+
+    "price_per_month": 99.99,
+
+    "features": [
+      "Event consultations and recommendations",
+      "Vendor recommendations",
+      "Event planning assistance",
+      "Budget guidance",
+      "Event timeline management"
+    ]
+  },
+  {
+    "subscription_id": 3,
+    "name": "Essential Event Planner",
+
+    "price_per_month": 59.99,
+
+    "features": [
+      "Basic event planning assistance",
+      "Event venue suggestions",
+      "Fundamental budget guidance",
+      "Event coordination support"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Smith",
+    "img": "https://i.ibb.co/WknS7Jg/alice-smith.jpg",
+    "event": "Birthday Party",
+    "testimonial": "I recently celebrated my son's 5th birthday with the help of [Social Event Management]. The event was a huge success! The decorations, games, and overall organization were fantastic. Thank you for making his day so special!"
+  },
+  {
+    "id": 2,
+    "name": "John Davis",
+    "img": "https://i.ibb.co/BBLPpyJ/jhon-davis.jpg",
+    "event": "Anniversary Party",
+    "testimonial": "We hired [Social Event Management] to plan our 25th-anniversary celebration. The event was magical! The attention to detail and the elegant arrangements truly made it a night to remember. Highly recommended!"
+  },
+  {
+    "id": 3,
+    "name": "Emily Johnson",
+    "img": "https://i.ibb.co/mJTDnFp/emily.jpg",
+    "event": "Retirement Party",
+    "testimonial": "Our retirement party organized by [Social Event Management] was exceptional. From the decorations to the farewell speeches, everything was beautifully orchestrated. It was the perfect send-off to our years of hard work. Thank you!"
+  },
+  {
+    "id": 4,
+    "name": "David Miller",
+    "img": "https://i.ibb.co/K61J0Rb/david.jpg",
+    "event": "Baby Shower",
+    "testimonial": "We had a joyous baby shower organized by [Social Event Management]. The theme, decorations, and games were adorable and thoughtful. It was a wonderful way to welcome our new family member. Great job!"
+  },
+  {
+    "id": 5,
+    "name": "Linda Brown",
+    "img": "https://i.ibb.co/VmvjZ4z/linda.jpg",
+    "event": "Engagement Party",
+    "testimonial": "Our engagement party organized by [Social Event Management] was amazing! The ambiance, food, and attention to detail were outstanding. It truly set the tone for our upcoming wedding. Thank you for a fabulous event!"
+  },
+  {
+    "id": 6,
+    "name": "Michael Clark",
+    "img": "https://i.ibb.co/DYwjGFp/clark.jpg",
+    "event": "Birthday Party",
+    "testimonial": "I had my 30th birthday party organized by [Social Event Management] and it was a blast! The energy, music, and arrangements were just perfect. Everyone had an unforgettable time. I can't recommend them enough!"
+  }
+]
