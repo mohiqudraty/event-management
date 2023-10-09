@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -34,6 +35,7 @@ const AuthProvider = ({ children }) => {
   // google sign in
 
   const googleSignIn = () => {
+    setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
 
@@ -70,3 +72,7 @@ const AuthProvider = ({ children }) => {
 };
 
 export default AuthProvider;
+
+AuthProvider.propTypes = {
+  children: PropTypes.node,
+};

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
@@ -8,6 +8,7 @@ const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+  const [error, setError] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -19,20 +20,28 @@ const Login = () => {
     const password = form.get("password");
     // console.log(email, password);
 
+    setError("");
+
     signIn(email, password)
-      .then(
-        (result) => console.log(result.user),
-        toast("Login Success"),
-        navigate(location?.state ? location.state : "/")
-      )
-      .catch((error) => console.log(error));
+      .then((result) => console.log(result.user))
+      .catch((error) => {
+        setError(error.code);
+      });
   };
 
   // login with google
   const handleGoogleSignIn = () => {
     googleSignIn()
-      .then((result) => console.log(result.user))
-      .catch((error) => console.log(error));
+      .then(
+        (result) => console.log(result.user),
+        navigate(location?.state ? location.state : "/"),
+        toast("Login Success")
+      )
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
   };
 
   return (
@@ -42,6 +51,7 @@ const Login = () => {
           <h1 className="text-5xl font-bold">Login now!</h1>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          {error && <p className="text-center text-red-600">{error}</p>}
           <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
@@ -78,12 +88,7 @@ const Login = () => {
                 Login
               </button>
             </div>
-            <button onClick={handleGoogleSignIn} className="btn btn-outline">
-              <span>
-                <FaGoogle></FaGoogle>
-              </span>{" "}
-              Login With Google
-            </button>
+
             <p className="text-center">
               <small>
                 {" "}
@@ -97,6 +102,15 @@ const Login = () => {
               </small>
             </p>
           </form>
+          <button
+            onClick={handleGoogleSignIn}
+            className="btn btn-outline mb-6 mx-3"
+          >
+            <span>
+              <FaGoogle></FaGoogle>
+            </span>{" "}
+            Login With Google
+          </button>
         </div>
       </div>
     </div>

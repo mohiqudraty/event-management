@@ -6,7 +6,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [error, setError] = useState();
+  const [error, setError] = useState("");
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -22,15 +22,15 @@ const Register = () => {
     setError("");
 
     if (password.length < 6) {
-      return setError("Password Minimum 6 characters.");
+      return setError("Password have Minimum 6 characters.");
     }
 
     if (!/[A-Z]/.test(password)) {
-      return setError("Password must Have Capital latter (A-Z) ");
+      return setError("Password must have a capital letter (A-Z) ");
     }
 
     if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-      return setError("Password must have a capital letter ");
+      return setError("Password must have a special character ");
     }
 
     // create user

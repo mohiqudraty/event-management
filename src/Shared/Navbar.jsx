@@ -8,7 +8,7 @@ const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const handleLogOut = () => {
-    logOut().then(toast.done("Logout success")).catch();
+    logOut().then(toast("Logout success")).catch();
   };
 
   const navLinks = (
@@ -97,7 +97,6 @@ const Navbar = () => {
             <div className="mx-4">
               {user.photoURL ? (
                 <Link to={"/profile"}>
-                  {" "}
                   <img
                     className="w-10 h-10 rounded-full"
                     src={user.photoURL}

@@ -11,6 +11,7 @@ import PrivetRoute from "./PrivetRoute";
 import TermsAndConditions from "../Pages/Dynamic/TermsAndCondition";
 import PrivacyPolicy from "../Pages/Dynamic/PrivacyPolicy";
 import Consultation from "../Pages/Consultation/Consultation";
+import Profile from "../Pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -58,8 +59,20 @@ const router = createBrowserRouter([
         element: <PrivacyPolicy></PrivacyPolicy>,
       },
       {
+        path: "/profile",
+        element: (
+          <PrivetRoute>
+            <Profile></Profile>
+          </PrivetRoute>
+        ),
+      },
+      {
         path: "/consultation",
-        element: <Consultation></Consultation>,
+        element: (
+          <PrivetRoute>
+            <Consultation></Consultation>
+          </PrivetRoute>
+        ),
       },
     ],
   },
